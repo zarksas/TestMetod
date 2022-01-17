@@ -3,4 +3,9 @@ let phone = {
     model: '10',
     color: 'darkslateblue',
     power: (true / false),
+
+
+    call(subscriber) {
+        return 'Я звоню';
+    }
 }
