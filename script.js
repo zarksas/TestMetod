@@ -11,10 +11,22 @@ let phone = {
 
     getBatteryPower() {
         return `Ваша зарядка ${this.batteryPower}%`
-    }
+    },
+
+    isOn() {
+        if (this.power === true) {
+            return 'телефон включен';
+        } else 
+            return  'телефон выключен';
+        
+    },
+
+    
 }
 
 phone.batteryPower = {
     charge: 40,
 }
+
+
 
