@@ -6,6 +6,6 @@ let phone = {
 
 
     call(subscriber) {
-        return 'Я звоню';
+        return `'Я звоню' ${subscriber}`;
     }
 }
