@@ -9,7 +9,9 @@ let phone = {
         return `'Я звоню' ${subscriber}`;
     },
 
-   
+    getBatteryPower() {
+        return `Ваша зарядка ${this.batteryPower}%`
+    }
 }
 
 phone.batteryPower = {
