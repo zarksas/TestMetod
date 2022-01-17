@@ -9,8 +9,10 @@ let phone = {
         return `'Я звоню' ${subscriber}`;
     },
 
-
+   
 }
 
-phone.batteryPower = charge;
+phone.batteryPower = {
+    charge: 40,
+}
 
