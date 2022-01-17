@@ -7,5 +7,10 @@ let phone = {
 
     call(subscriber) {
         return `'Я звоню' ${subscriber}`;
-    }
+    },
+
+
 }
+
+phone.batteryPower = charge;
+
