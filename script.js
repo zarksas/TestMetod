@@ -23,9 +23,24 @@ let phone = {
 
     switch() {
         this.power = !this.power
-    }
+    },
+
+    sentMessage(to, time, message) {
+        this.sent.push({
+            to, time, push
+        })
+    },
 
 
+    clearSent() {
+        this.sent = [];
+    },
+
+    clearInbox() {
+        this.inbox = [];
+    },
+
+  
 
 
 }
@@ -34,7 +49,7 @@ phone.batteryPower = {
     charge: 40,
 }
 
-phone.outgoingMessage = [
+phone.sent = [
     {
         to: "89386854942",
         time: "23:00",
@@ -42,7 +57,7 @@ phone.outgoingMessage = [
     }
 ];
 
-phone.incoming = [
+phone.inbox = [
     {
         from: "89899052345",
         time: "01:00",
